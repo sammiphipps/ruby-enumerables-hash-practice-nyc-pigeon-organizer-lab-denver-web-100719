@@ -4,10 +4,12 @@ def nyc_pigeon_organizer(data)
     color_gender_lives.each do |attribute, pigeons|
       pigeons.each do |name|
         if pigeon_list[name]
-          
+          pigeon_list
         else
+          pigeon_list[name][color_gender_lives]
         end
       end
     end 
   end
+  pigeon_list
 end
