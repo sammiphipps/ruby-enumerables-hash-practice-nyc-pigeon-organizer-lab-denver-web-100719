@@ -3,9 +3,10 @@ def nyc_pigeon_organizer(data)
   data.each do |color_gender_lives, hash|
     color_gender_lives.each do |attribute, pigeons|
       pigeons.each do |name|
-        if pigeon_list[name]
-          pigeon_list[name][color_gender_lives].push
+        if pigeon_list[name] == nil
+          pigeon_list[name] = {}
         else
+          
         end
       end
     end 
